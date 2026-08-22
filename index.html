@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbershop — Haircut &amp; Beard Specialists</title>
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">
+      <img src="assets/img/home-logo.svg" alt="Barbershop logo" class="logo-mark">
+      <span>Barbershop</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About us</a>
+      <a href="#works" class="nav-link">Works</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#experts" class="nav-link">Experts</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary header-cta">Contact us</a>
+
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home" style="background-image:url('assets/img/home-bg.png')">
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow">Since 2016 — Trusted Local Barbershop</p>
+    <h1>Haircut and Beard<br>Specialists</h1>
+    <p class="hero-text">Barbershop specializing in haircuts, fades, classic shaves, and beard designing. Our team of professional barbers guarantees impeccable results, tailored to your style, personality, and modern taste.</p>
+    <a href="#works" class="btn btn-primary">See Our Haircut Work</a>
+  </div>
+  <div class="hero-scroll">
+    <span></span>
+    <p>Scroll</p>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-img-wrap" data-reveal>
+      <img src="assets/img/about-img.png" alt="Barber trimming a client's hair" class="about-img">
+    </div>
+    <div class="about-content" data-reveal>
+      <p class="eyebrow">Who we are</p>
+      <h2>About Our Local<br>Barbershop</h2>
+      <p>At our barbershop, we combine the tradition of classic haircuts with modern trends to give you a unique experience. Every service is designed to highlight your personality, blending precision, comfort, and old-school craftsmanship in a relaxed, welcoming space.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">99%</span>
+          <span class="stat-label">Customer<br>Satisfaction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">7+</span>
+          <span class="stat-label">Years of<br>Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORKS ===== -->
+<section class="works" id="works">
+  <div class="container works-head" data-reveal>
+    <div>
+      <p class="eyebrow">Gallery</p>
+      <h2>Discover Our Works</h2>
+    </div>
+    <p class="works-text">Our work includes both vintage and modern styles. We stay up-to-date with the latest trends to guarantee the best possible service, no matter the look you're after.</p>
+  </div>
+
+  <div class="works-carousel" data-reveal>
+    <button class="works-arrow works-prev" id="worksPrev" aria-label="Previous work">&#8592;</button>
+    <div class="works-track-wrap">
+      <div class="works-track" id="worksTrack">
+        <!-- slides injected by JS -->
+      </div>
+    </div>
+    <button class="works-arrow works-next" id="worksNext" aria-label="Next work">&#8594;</button>
+  </div>
+  <div class="works-counter">
+    <span id="worksCurrent">01</span> / <span id="worksTotal">10</span>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container services-grid">
+    <div data-reveal>
+      <p class="eyebrow">Price list</p>
+      <h2>Our Services</h2>
+      <p class="services-text">Straightforward pricing, no surprises. Every cut and shave is carried out by an experienced barber using premium tools and products.</p>
+      <a href="#contact" class="btn btn-outline">Book an Appointment</a>
+    </div>
+    <ul class="services-list" data-reveal>
+      <li><span>Adult Haircut</span><i></i><b>$40</b></li>
+      <li><span>Kids Haircut</span><i></i><b>$20</b></li>
+      <li><span>Neck Shave</span><i></i><b>$25</b></li>
+      <li><span>Beard Trim</span><i></i><b>$15</b></li>
+      <li><span>Haircut + Shave</span><i></i><b>$70</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== EXPERTS ===== -->
+<section class="experts" id="experts">
+  <div class="container">
+    <div class="experts-head" data-reveal>
+      <p class="eyebrow">Our team</p>
+      <h2>Meet Our Barbers</h2>
+      <p>Each barber on our team is committed to providing an exceptional grooming experience, ensuring you leave our shop looking and feeling your best.</p>
+    </div>
+
+    <div class="experts-grid" data-reveal>
+      <div class="expert-card">
+        <div class="expert-img-wrap"><img src="assets/img/expert-img-1.png" alt="Alex Pall, Master Barber"></div>
+        <h3>Alex Pall</h3>
+        <p>Master Barber</p>
+        <div class="expert-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="expert-card">
+        <div class="expert-img-wrap"><img src="assets/img/expert-img-2.png" alt="Doe Will, Fade Specialist"></div>
+        <h3>Doe Will</h3>
+        <p>Fade Specialist</p>
+        <div class="expert-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="expert-card">
+        <div class="expert-img-wrap"><img src="assets/img/expert-img-3.png" alt="Emy Larz, Beard Stylist"></div>
+        <h3>Emy Larz</h3>
+        <p>Beard Stylist</p>
+        <div class="expert-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="expert-card">
+        <div class="expert-img-wrap"><img src="assets/img/expert-img-4.png" alt="Jon Reck, Style Consultant"></div>
+        <h3>Jon Reck</h3>
+        <p>Style Consultant</p>
+        <div class="expert-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / LOCATION ===== -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+<div class="map-wrap" data-reveal>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26926.446945533706!2d72.89211238994442!3d32.477883876373554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3921b032694147ef%3A0xc29f5ba43c633612!2sBhera%2C%20Pakistan!5e0!3m2!1sen!2s!4v1787412062887!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+    <div class="contact-info" data-reveal>
+      <p class="eyebrow">Find us</p>
+      <h2>Visit The Shop</h2>
+      <div class="info-item">
+        <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <div>
+          <h4>Location</h4>
+          <p>120th Street Avenue, Miraflores, Lima — Peru</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon"><i class="fa-regular fa-clock"></i></span>
+        <div>
+          <h4>Operational Hours</h4>
+          <p>Monday – Saturday: 9am – 8pm<br>Sunday: 9am – 6pm</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+        <div>
+          <h4>Call Us &amp; Book</h4>
+          <p>+(01)4-9876-01<br>+(008)7654-321</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo footer-logo">
+        <img src="assets/img/home-logo.svg" alt="Barbershop logo" class="logo-mark">
+        <span>Barbershop</span>
+      </a>
+      <p>Your local barbershop for classic cuts, sharp fades, and modern grooming — since 2016.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#works">Works</a>
+      <a href="#services">Services</a>
+    </div>
+    <div class="footer-col">
+      <h4>Write To Us</h4>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="#"><i class="fa-brands fa-facebook-messenger"></i> Messenger</a>
+      <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+      <a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
+    </div>
+    <div class="footer-col">
+      <h4>Social</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1Dqot7hdFz/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.google.com/search?q=twitter&oq=twi&gs_lcrp=EgZjaHJvbWUqFQgAEAAYQxiDARjjAhixAxiABBiKBTIVCAAQABhDGIMBGOMCGLEDGIAEGIoFMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIVCAMQLhhDGMcBGLEDGNEDGIAEGIoFMhIIBBAAGEMYgwEYsQMYgAQYigUyEggFEAAYQxiDARixAxiABBiKBTISCAYQABhDGIMBGLEDGIAEGIoFMhIIBxAAGEMYgwEYsQMYgAQYigUyDAgIEAAYQxiABBiKBTIPCAkQABhDGLEDGIAEGIoF0gEIMTYzOWowajeoAgiwAgHxBQbKS4sNhYMf8QUGykuLDYWDHw&sourceid=chrome&source=chrome.ob&ie=UTF-8" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/watch?v=7zjrsmMYPyY&t=174s" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Barbershop. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
